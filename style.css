@@ -136,3 +136,6 @@ header nav{--nav-icon-size:2.4rem}
   .hero img{width:min(100%,14rem)}
   .hero-tagline{font-size:1.08rem;text-wrap:balance}
 }
+
+.hero-credential{display:block;text-wrap:balance}
+.credential-name{white-space:nowrap}
