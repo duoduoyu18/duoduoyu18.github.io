@@ -86,7 +86,13 @@ main>section>h2{margin:0;line-height:1.4}
 nav .language-switch{margin-left:auto}
 nav .language-switch+#theme{margin-left:0}
 .hero-note{max-width:none;margin:.45rem 0 0;color:var(--muted)}
-.hero-links .cv-link{font-weight:700}
+.hero-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem .75rem}
+.cv-link{
+  display:inline-flex;align-items:center;min-height:2.75rem;padding:.35rem .8rem;
+  border:1px solid var(--link);border-radius:.5rem;background:var(--link);color:var(--bg);
+  font-size:.9rem;font-weight:700;line-height:1.2;text-decoration:none;white-space:nowrap
+}
+.cv-link:hover{text-decoration:underline}
 html[lang=en] body,html[lang=en] h1,html[lang=en] h2{font-family:Inter,"Segoe UI",Arial,sans-serif}
 html[lang=en] h1,html[lang=en] h2{letter-spacing:-.025em}
 nav .nav-name{justify-self:start;font-weight:750;white-space:nowrap;margin-right:.35rem}
@@ -122,3 +128,11 @@ header nav{--nav-icon-size:2.4rem}
 
 .hero-tagline{max-width:none;margin:.65rem 0 .25rem;font-size:clamp(1.08rem,2vw,1.4rem);font-weight:650;line-height:1.4}
 .hero-tagline+.hero-note{margin-top:0}
+
+@media(max-width:600px){
+  .hero{flex-direction:column;align-items:flex-start;gap:.9rem}
+  .hero>div{width:100%}
+  .hero img{width:min(100%,14rem)}
+  .hero-tagline{font-size:1.08rem;text-wrap:balance}
+  .hero-note{font-size:.94rem;line-height:1.65}
+}
