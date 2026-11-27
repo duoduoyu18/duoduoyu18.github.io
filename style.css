@@ -85,7 +85,7 @@ main>section>h2{margin:0;line-height:1.4}
 @media(max-width:700px){main>section{grid-template-columns:minmax(0,1fr);gap:.85rem;padding-block:1.3rem 1.65rem}}
 nav .language-switch{margin-left:auto}
 nav .language-switch+#theme{margin-left:0}
-.hero-note{margin:.45rem 0 0;color:var(--muted)}
+.hero-note{max-width:none;margin:.45rem 0 0;color:var(--muted)}
 .hero-links .cv-link{font-weight:700}
 html[lang=en] body,html[lang=en] h1,html[lang=en] h2{font-family:Inter,"Segoe UI",Arial,sans-serif}
 html[lang=en] h1,html[lang=en] h2{letter-spacing:-.025em}
