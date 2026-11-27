@@ -54,8 +54,9 @@ nav a:hover,nav a:focus-visible,button#theme:hover,button#theme:focus-visible{ba
 .paper-title a{color:inherit}.paper-title a:hover,.paper-title a:focus-visible{color:var(--link)}
 
 .project-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:.15rem .8rem}.project-heading a{font-size:1rem;text-decoration-skip-ink:none}
-.hero-links{font-size:.9rem}
-.hero>div{display:grid;gap:var(--space-line);min-width:0}.hero-links a{overflow-wrap:anywhere}
+.hero-links,.hero-note{font-size:.95rem}
+.hero>div{display:grid;gap:var(--space-paragraph);min-width:0}
+.hero-intro{display:grid;gap:.25rem}.hero-links a{overflow-wrap:anywhere}
 .mini-project{display:flex;align-items:flex-start;gap:.65rem 1rem;flex-wrap:wrap}
 .mini-code{width:7.5rem;height:auto;border-radius:.35rem}
 #research .research-group h3{color:var(--ink);margin:0 0 .75rem}
@@ -134,5 +135,4 @@ header nav{--nav-icon-size:2.4rem}
   .hero>div{width:100%}
   .hero img{width:min(100%,14rem)}
   .hero-tagline{font-size:1.08rem;text-wrap:balance}
-  .hero-note{font-size:.94rem;font-variant-numeric:tabular-nums}
 }
