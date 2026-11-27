@@ -66,15 +66,15 @@ nav a:hover,nav a:focus-visible,button#theme:hover,button#theme:focus-visible{ba
 #research .paper-title,#research .conference-list strong{line-height:1.5}
 #research .research-entry .meta,#research .conference-list .meta{margin-top:.12rem}
 
-header{position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line);background:var(--bg)}
-nav{padding:.5rem 0;border-bottom:0}
+header{position:sticky;top:.65rem;z-index:5;padding:0;margin:.65rem 0 0;border:1px solid var(--line);border-radius:.8rem;background:var(--bg);box-shadow:0 5px 18px #17231c19}
+nav{padding:.35rem .55rem;border-bottom:0}
 main section{scroll-margin-top:6.5rem}
 .hero-links a{text-decoration-skip-ink:none;text-underline-offset:.29em}
 #research .research-group + .research-group{margin-top:var(--space-group)}
 #research .research-group h3{font-weight:700;margin-bottom:var(--space-line)}
 .education-list p{margin:0}
 .education-list strong{font-weight:650}
-@media(max-width:480px){nav{padding:.25rem 0}main section{scroll-margin-top:7rem}}
+@media(max-width:480px){header{top:.35rem}nav{padding:.25rem .35rem}main section{scroll-margin-top:7rem}}
 body{max-width:76rem}
 main>section{display:grid;grid-template-columns:minmax(8rem,.21fr) minmax(0,1fr);gap:clamp(1.3rem,3vw,3.2rem);align-items:start;padding-block:clamp(1.5rem,3vw,2rem)}
 main>section>h2{margin:0;line-height:1.4}
