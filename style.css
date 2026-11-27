@@ -1,5 +1,5 @@
-:root{color-scheme:light;--bg:#f7f6f1;--ink:#222b29;--muted:#53625c;--line:#cdd4cc;--link:#185c50}
-:root[data-theme=dark]{color-scheme:dark;--bg:#181e1b;--ink:#f0efe7;--muted:#bac6bd;--line:#3f4b42;--link:#9cd6ba}
+:root{color-scheme:light;--bg:#f8f6ef;--ink:#242b25;--muted:#535d51;--line:#d4d8cc;--link:#365847}
+:root[data-theme=dark]{color-scheme:dark;--bg:#1b211c;--ink:#f0eee4;--muted:#bcc5b8;--line:#444e43;--link:#accdb7}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:0 clamp(1rem,5vw,3rem);max-width:62rem;background:var(--bg);color:var(--ink);font:1rem/1.58 Inter,"Microsoft YaHei",sans-serif}
 a{color:var(--link);text-underline-offset:.23em}
@@ -8,7 +8,7 @@ nav,footer,.section-head{display:flex;align-items:center;gap:.75rem 1.4rem;flex-
 nav{padding:.55rem 0;border-bottom:1px solid var(--line)}
 nav a{text-decoration:none}
 button#theme{margin-left:auto;color:var(--ink);background:transparent;font:inherit;font-size:1.2rem;border:1px solid var(--line);border-radius:50%;width:var(--nav-icon-size);height:var(--nav-icon-size);cursor:pointer}
-.hero{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 0 1.5rem}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:clamp(1.5rem,4vw,3rem) 0}
 h1,h2{font-family:"Songti SC",SimSun,serif}
 h1{margin:0;font-size:clamp(2rem,4vw,2.85rem);line-height:1.15}
 .hero img{display:block;width:clamp(8rem,30vw,17rem);height:auto;border-radius:.65rem}
@@ -65,15 +65,15 @@ nav a:hover,nav a:focus-visible,button#theme:hover,button#theme:focus-visible{ba
 #research .paper-title,#research .conference-list strong{line-height:1.5}
 #research .research-entry .meta,#research .conference-list .meta{margin-top:.12rem}
 
-header{position:sticky;top:.65rem;z-index:5;padding:0;margin:.65rem 0 0;border:1px solid var(--line);border-radius:.8rem;background:var(--bg);box-shadow:0 5px 18px #17231c19}
-nav{padding:.35rem .55rem;border-bottom:0}
+header{position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line);background:var(--bg)}
+nav{padding:.5rem 0;border-bottom:0}
 main section{scroll-margin-top:6.5rem}
 .hero-links a{text-decoration-skip-ink:none;text-underline-offset:.29em}
 #research .research-group + .research-group{margin-top:1.65rem}
 #research .research-group h3{font-weight:700;margin-bottom:.48rem}
 .education-list p{margin:0}
 .education-list strong{font-weight:650}
-@media(max-width:480px){header{top:.35rem}nav{padding:.25rem .35rem}main section{scroll-margin-top:7rem}}
+@media(max-width:480px){nav{padding:.25rem 0}main section{scroll-margin-top:7rem}}
 body{max-width:76rem}
 main>section{display:grid;grid-template-columns:minmax(8rem,.21fr) minmax(0,1fr);gap:clamp(1.3rem,3vw,3.2rem);align-items:start;padding-block:1.7rem 2rem}
 main>section>h2{margin:0;line-height:1.4}
@@ -88,14 +88,14 @@ nav .language-switch+#theme{margin-left:0}
 .hero-note{max-width:none;margin:.45rem 0 0;color:var(--muted)}
 .hero-heading{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem .75rem}
 .cv-link{
-  display:inline-flex;align-items:center;min-height:2.75rem;padding:.35rem .8rem;
-  border:1px solid var(--link);border-radius:.5rem;background:var(--link);color:var(--bg);
-  font-size:.9rem;font-weight:700;line-height:1.2;text-decoration:none;white-space:nowrap
+  display:inline-flex;align-items:center;gap:.25rem;min-height:2.75rem;
+  font-size:.95rem;font-weight:650;line-height:1.2;text-decoration:none;white-space:nowrap
 }
-.cv-link:hover{text-decoration:underline}
+.cv-link span{text-decoration:underline;text-underline-offset:.26em;text-decoration-color:var(--line)}
+.cv-link:hover span,.cv-link:focus-visible span{text-decoration-color:currentColor}
 html[lang=en] body,html[lang=en] h1,html[lang=en] h2{font-family:Inter,"Segoe UI",Arial,sans-serif}
 html[lang=en] h1,html[lang=en] h2{letter-spacing:-.025em}
-nav .nav-name{justify-self:start;font-weight:750;white-space:nowrap;margin-right:.35rem}
+nav .nav-name{justify-self:start;font-weight:650;white-space:nowrap;margin-right:.35rem}
 
 
 nav .nav-links,nav .nav-controls{display:flex;align-items:center;gap:inherit}
@@ -130,9 +130,9 @@ header nav{--nav-icon-size:2.4rem}
 .hero-tagline+.hero-note{margin-top:0}
 
 @media(max-width:600px){
-  .hero{flex-direction:column;align-items:flex-start;gap:.9rem}
+  .hero{flex-direction:column;align-items:flex-start;gap:1rem}
   .hero>div{width:100%}
   .hero img{width:min(100%,14rem)}
   .hero-tagline{font-size:1.08rem;text-wrap:balance}
-  .hero-note{font-size:.94rem;line-height:1.65}
+  .hero-note{font-size:.94rem;line-height:1.65;font-variant-numeric:tabular-nums}
 }
